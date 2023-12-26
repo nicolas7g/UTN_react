@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+   
+}
+
+.marco__externo{
+    background: linear-gradient(135deg,  rgba(255,255,255,1) 26%,rgba(255,255,255,1) 43%,rgba(229,229,229,1) 80%); 
+}
+
+
+a:active{
+    color: red;
+}
+
+
+
+
+
+.preguntas{
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 50%;
+    margin: 50px 0 50px 50px;
+
+}
+
+.perfil >h3{
+    text-decoration: underline;
+     margin-bottom: 10px;
+
+
+}
+
+.perfil{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.contacto{
+    margin-bottom: 10px;
+}
+
+
+
