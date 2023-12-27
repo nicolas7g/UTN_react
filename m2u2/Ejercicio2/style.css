@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    border:  2px solid black;
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between; /*alinea sobre el eje principal (horizontal para filas)*/
+   
+}
+
+#rojo{
+    background-color: red; 
+}
+
+#verde{
+    background-color: green;
+}
+
+#azul{
+    background-color: blue; 
+}
+
+.cuadrado{
+    width: 150px;
+    height: 150px;
+    color:white;
+    text-align: center;
+    line-height: 150px;
+}
