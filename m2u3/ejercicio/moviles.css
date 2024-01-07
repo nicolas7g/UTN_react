@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-size: 1.1em;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    background: #8FA68E;
+}
+
+nav{
+    background: #d1c76d;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+	list-style-type:none;
+    gap: 20px;
+}
+
+
+section{
+    background: #F1F2C0;
+    border-top: 1px solid black;
+    padding: 10px 0 10px 10px;
+}
+
+aside{
+    background: #CCC59E;
+    border-top: 1px solid black;
+    padding: 10px 0 10px 10px;
+}
