@@ -1,0 +1,152 @@
+body{
+    background-image: url('../IMAGES/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+/***************** NAV ***********************/
+
+nav {
+   
+    margin: 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    flex: 0.1;
+}
+
+
+.nav__left{
+    flex: 0.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav__left > a > img{
+    width: 80%;
+    
+}
+
+.nav__right{
+    display: flex;
+    flex: 0.8;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav > div > a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.menu{
+    font-size: 14px;
+    color: #f4f4f4;
+    white-space: nowrap;
+    line-height: 1em;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+
+/***************** MAIN ***********************/
+
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 600px;
+    flex: 0.95;
+    padding: 80px;
+}
+
+.desc__vehiculo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.desc__breve{
+    flex: 0.8;
+}
+
+
+.desc__breve > h1{
+    color: white;
+    font-size: 40px;
+}
+
+.desc__breve > p{
+    color: white;
+    font-size: 20px;
+}
+
+
+.mas__info{
+    justify-content: flex-end;
+    flex: 0.2;
+    text-align: right;
+
+}
+
+.mas__info > button{
+    height: 50px;
+    width: 150px;
+    border: 2px  solid  #972738;
+    background-color: #f4f4f4;
+    color: #292b35;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  
+
+}
+.carousel{
+    width: 150px;
+}
+
+.boton_car{
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+.boton_car > svg{ 
+    text-align: center;
+}
+
+.boton_car:hover{
+    border-radius: 100%;
+    border: 2px  solid  #972738;
+}
+
+
+/***************** FOOTER ***********************/
+
+
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    font-size: 10px;
+    flex: 0.05;
+    
+}
