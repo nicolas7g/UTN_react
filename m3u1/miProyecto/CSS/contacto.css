@@ -1,29 +1,23 @@
-*{
-    box-sizing:border-box ;
-}
-
 body{
+
+    display: flex;
+    flex-direction: column;
     background-image: url('../IMAGES/home.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
     height: 100vh;
-    
-}
-/***************** NAV ***********************/
+  }
 
-nav {
-   
-    
+
+  nav {
+
     display: flex;
     margin: 0;
     padding: 20px 80px;
     justify-content: space-between;
     align-items: center;
     height: 55px;
-    flex: 0.1;
+    z-index: 2;
 }
 
 
@@ -85,87 +79,70 @@ nav > div > a{
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 1px;
-
+    z-index: 2;
 }
 
+  .background__gradient{
+    flex: 0.9;
+    width: 100%;
+    z-index: 1;
+    
+    background: rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
 
-/***************** MAIN ***********************/
+  
+  
+  .contacto__container {
+    height: 85vh;
+    display: grid;
+    place-items: start center;  
+    
+    
+  }
 
-.contenedor{
+  .tarjeta__contacto{
+    padding: 100px;
+    text-align: center;
+    background: rgba(28,31,42, 0.6);
+    width: 50%;
+    height: 20%;
+    border-radius: 10px; 
+    color: white;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
-    margin-top: 600px;
-    flex: 0.8;
-    padding: 0 80px;
-}
+  }
 
-.desc__vehiculo{
+  .tarjeta__telefono{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    gap: 10px
+  }
 
+  .tarjeta__telefono > img{
+     width: 30px;
+     height: 30px;
+     background-color: transparent;
+  }
 
-.desc__breve{
-    flex: 0.8;
-}
+  .tarjeta__ig{
+    display: flex;
+    align-items: center;
+    gap: 10px
+  }
 
+  .tarjeta__ig > img{
+    width: 30px;
+     height: 30px;
+  }
 
-.desc__breve > h1{
-    color: white;
-    font-size: 40px;
-}
-
-.desc__breve > p{
-    color: white;
-    font-size: 20px;
-}
-
-
-.mas__info{
-    justify-content: flex-end;
-    flex: 0.2;
-    text-align: right;
-
-}
-
-.mas__info > button{
-    height: 50px;
-    width: 150px;
-    border: 2px  solid  #972738;
-    background-color: #f4f4f4;
-    color: #292b35;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-  
-
-}
-.carousel{
-    width: 150px;
-}
-
-.boton_car{
-    height: 50px;
-    width: 50px;
-    border: none;
-    background-color: transparent;
-    font-size: 30px;
-    cursor: pointer;
-    
-}
-.boton_car > svg{ 
-    text-align: center;
-}
-
-.boton_car:active{
-    border: 3px  solid  #972738;
-    border-radius: 100%;
-  
-}
-
-
-/***************** FOOTER ***********************/
+  /***************** FOOTER ***********************/
 
 
 footer{
@@ -175,6 +152,6 @@ footer{
     text-align: center;
     font-size: 10px;
     flex: 0.1;
-    height: 30px;
     
 }
+  
