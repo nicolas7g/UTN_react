@@ -1,0 +1,12 @@
+/***************** FOOTER ***********************/
+
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    font-size: 10px;
+    flex: 0.1;
+    max-height: 35px;
+    
+}

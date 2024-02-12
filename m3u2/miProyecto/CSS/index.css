@@ -1,0 +1,93 @@
+*{
+    box-sizing:border-box ;
+  }
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../IMAGES/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    height: 100vh;
+
+    
+}
+
+/***************** MAIN ***********************/
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 600px;
+    flex: 0.8;
+    padding: 0 80px;
+}
+
+.desc__vehiculo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.desc__breve{
+    flex: 0.8;
+}
+
+
+.desc__breve > h1{
+    color: white;
+    font-size: 40px;
+}
+
+.desc__breve > p{
+    color: white;
+    font-size: 20px;
+}
+
+
+.mas__info{
+    justify-content: flex-end;
+    flex: 0.2;
+    text-align: right;
+
+}
+
+.mas__info > button{
+    height: 50px;
+    width: 150px;
+    border: 2px  solid  #ba0816;
+    background-color: #f4f4f4;
+    color: #292b35;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  
+
+}
+.carousel{
+    width: 150px;
+}
+
+.boton_car{
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+.boton_car > svg{ 
+    text-align: center;
+}
+
+.boton_car:active{
+    border: 3px  solid  #ba0816;
+    border-radius: 100%;
+  
+}
+
+

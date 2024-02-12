@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../IMAGES/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    height: 100vh;
+
+
+}
+
+
+.contenedor {
+    height: 100vh;
+
+}
+
+.cards {
+    display: flex;
+    background-color: #1c1f2a;
+    height: 50vh;
+    margin-top: 20px;
+
+}
+
+.card {
+    padding: 30px 160px;
+}
+
+h1 {
+    font-size: 16px;
+    color: #9c9c9c;
+}
+
+ul{
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+    font-weight: 600;
+    color: #f4f4f4;
+}
