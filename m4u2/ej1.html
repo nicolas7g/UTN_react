@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cuadro c1" style="background-color: blue; height: 150px; width: 150px;" >
+    </div>
+    <div class="cuadro c2" style="background-color: yellow; height: 150px; width: 150px;" >
+    </div>
+    <div class="cuadro c3" style="background-color: red; height: 150px; width: 150px;" >
+    </div>
+
+    <script>
+        const cuadros = document.querySelectorAll('.cuadro');
+        
+        for (let i = 0; i < cuadros.length; i++){
+            cuadros[i].addEventListener('click', function(){
+            
+                cuadros[i].style.backgroundColor = '#' +Math.floor(Math.random() * 256);
+            });
+        }
+    </script>
+</body>
+</html>
