@@ -5,7 +5,7 @@ import Telefono from '../IMAGES/phone.svg'
 
 function Contacto() {
     return (
-        <div class="background__gradient">
+        
             <main class="contacto__contenedor">
                 <div class="tarjeta__contacto">
                     <div class="tarjeta__telefono">
@@ -19,7 +19,7 @@ function Contacto() {
 
                 </div>
             </main>
-        </div >
+        
     )
 }
 
