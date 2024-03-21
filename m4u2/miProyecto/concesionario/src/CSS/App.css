@@ -1,0 +1,11 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  background-image: url('../IMAGES/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  height: 100vh;
+
+  
+}
