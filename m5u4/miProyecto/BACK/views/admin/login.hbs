@@ -1,0 +1,19 @@
+<div class="__container">
+    <form action="/admin/login" method="post" class="form-signin formulario">
+        <h1 class="h1 mb-3 font-weight-normal">Por favor registrese</h1>
+        <!--label for="inputEmail" class="sr-only">Dirección de correo</label-->
+        <input style="margin-bottom: 2px" type="text" id="inputEmail" class="form-control" placeholder="Usuario" name="usuario" required autofocus>
+        <!--label for="inputPassword" class="sr-only">Contraseña</label-->
+        <input style="margin-bottom: 10px" type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Recordarme </input>
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
+    </form>
+        {{#if error}}
+            <p style="color:white;">Usuario y/o contraseña incorrectos</p>
+        {{/if}}
+</div>
