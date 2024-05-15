@@ -1,0 +1,13 @@
+.mod__contenedor{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #1c1f2a;
+    margin-top: 20px;
+    color: #f4f4f4;
+    /*flex: 1;*/
+
+}
+ 
+

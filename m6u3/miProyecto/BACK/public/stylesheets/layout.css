@@ -1,0 +1,54 @@
+.__container {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  background: rgba(28, 31, 42, 0.9);
+  width: 500px;
+  height: 320px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#inputEmail,
+#inputPassword,
+.btn {
+  width: 400px;
+}
+
+
+.btn-light{
+  border: none;
+}
+
+
+
+.btn_icon{
+  width:30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.btn-disabled{
+  pointer-events: none; /* Deshabilita los eventos de puntero */
+  opacity: 0.5;
+}

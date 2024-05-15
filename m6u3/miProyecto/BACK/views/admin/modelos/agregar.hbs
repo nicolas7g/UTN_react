@@ -1,0 +1,39 @@
+<div class="__fondo">
+
+    <div class="__container">
+
+        <h4 class="h4 mb-3 font-weight-normal" style="text-align: center;">Agregar un nuevo vehiculo</h4>
+
+        <form action="/admin/modelos/listado/agregar" method="post" class="formulario" enctype="multipart/form-data">
+
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="Nombre"
+                name="nombre"/>
+
+            <textarea style="margin-bottom: 10px" class="form-control" name="desc" rows=5 cols=100
+                placeholder="Descripción"></textarea>
+
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="Version"
+                name="version"/>
+
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="Motor"
+                name="motor"/>
+
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="Precio"
+                name="precio"/>
+
+
+            <Label style="margin-bottom: 10px">Imagen:
+                <input type="file" id="imagen" name="imagen"/>
+            </Label>
+            <Label style="margin-bottom: 10px">Imagen version:
+                <input type="file" id="imagen_ver" name="imagen_ver"/>
+            </Label>
+
+            <button class="btn btn-lg btn-primary btn-block btn_guardar" type="submit">Guardar</button>
+
+        </form>
+        {{#if error}}
+        <p>{{message}}</p>
+        {{/if}}
+    </div>
+</div>

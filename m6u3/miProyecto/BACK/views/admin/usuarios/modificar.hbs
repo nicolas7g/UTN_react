@@ -1,0 +1,31 @@
+<div class="__container">
+
+    <div class="formulario">
+
+        <h4 class="h4 mb-3 font-weight-normal" style="text-align: center;">Modificar usuario</h4>
+        
+        <label for="usuario">Usuario:</label>
+        <input style="margin-bottom: 30px" type="text" class="form-control" name="usuario"
+               readonly  value={{usuario.usuario}}></input>
+
+
+        <form action="/admin/usuarios/listado/modificar" method="post" class="form_agregar">
+            
+            <input type="hidden" value={{usuario.id}} name="id">
+
+            <label for="nombre">Nombre:</label> 
+            <input style="margin-bottom: 10px" class="form-control" name="nombre" value={{usuario.nombre}}></input>
+
+            <label for="cargo">Cargo:</label> 
+            <input style="margin-bottom: 10px" class="form-control" name="cargo" value={{usuario.cargo}}></input>
+
+            <button style="width: 100%; margin-top: 50px;" class="btn btn-lg btn-primary btn-block" type="submit">Guardar</button>
+
+        </form>
+
+        {{#if error}}
+        <p>{{message}}</p>
+        {{/if}}
+
+    </div>
+</div>
