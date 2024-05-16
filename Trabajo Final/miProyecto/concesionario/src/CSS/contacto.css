@@ -1,0 +1,119 @@
+.contacto__contenedor {
+    
+    display: grid;
+    place-items:  center;   
+    flex: 1;
+
+    
+  }
+
+
+  .tarjeta__contacto{
+    background: rgba(28,31,42, 0.9);
+    width: 600px;
+    height: 150px;
+    border-radius: 10px; 
+    color: white;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    justify-content:space-between;
+    border: 3px  solid  #ba0816;
+
+  }
+
+
+
+
+  .tarjeta__telefono{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    height: 30px;
+  }
+
+  .tarjeta__telefono > img{
+     width: 25px;
+     height: 25px;
+  }
+
+  .tarjeta__ig{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+  }
+
+  .tarjeta__ig > img{
+    width: 25px;
+     height: 25px;
+  }
+
+
+.tarjeta__formulario{
+  background: rgba(28,31,42, 0.9);
+  width: 600px;
+  height: 600px;
+  border-radius: 10px; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  border: 3px  solid  #ba0816;
+}
+
+
+.tarjeta__formulario h3{
+  font-size: 30px;
+  margin: 0;
+  padding-bottom: 50px;
+}  
+
+.form_contacto{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+ 
+}
+
+.form_contacto input{
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 20px;
+  outline: none;
+
+}
+
+.form_contacto label{
+  margin-bottom: 3px;
+}
+
+.form_contacto textarea{
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+.acciones{
+ margin-top: 30px;
+ margin-bottom: 0;
+}
+
+.acciones input{
+  height: 40px;
+  background-color: #ba0816;
+  opacity: 0.9;
+  color: #f4f4f4;
+  font-size: 18px;
+
+
+ }

@@ -1,0 +1,70 @@
+<div class="__fondo ">
+
+    <div class="__container">
+
+        <h4 class="h4 mb-3 font-weight-normal" style="text-align: center;">Modificar vehiculo</h4>
+
+
+        <form action="/admin/modelos/listado/modificar" method="post" class="formulario" enctype="multipart/form-data">
+
+            <input type="hidden" value={{modelo.id}} name="id">
+
+
+            <label for="nombre">Nombre:</label>
+            <input style="margin-bottom: 10px" type="text" class="form-control" name="nombre"
+                value="{{modelo.nombre}}"></input>
+
+
+            <label for="desc">Descripción:</label>
+            <textarea style="margin-bottom: 10px" rows="7" class="form-control" name="desc">{{modelo.desc}}</textarea>
+
+            <label for="version">Version:</label>
+            <input style="margin-bottom: 10px" class="form-control" name="version" value="{{modelo.version}}"></input>
+
+            <label for="motor">Motor:</label>
+            <input style="margin-bottom: 10px" class="form-control" name="motor" value="{{modelo.motor}}"></input>
+
+            <label for="precio">Precio:</label>
+            <input style="margin-bottom: 10px" class="form-control" name="precio" value={{modelo.precio}}></input>
+
+
+            <div>
+                <p>
+                    <Label style="margin-bottom: 10px">Imagen:
+                        {{{modelo.imagen}}}
+                        <input type="file" id="imagen" name="imagen" />
+                    </Label>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="img_delete" id="img_delete" value="1">
+                        Eliminar imagen actual?</label>
+                    <input type="hidden" name="img_original" value={{modelo.img_id}}>
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <Label style="margin-bottom: 10px">Imagen:
+                        {{{modelo.imagen_ver}}}
+                        <input type="file" id="imagen_ver" name="imagen_ver" />
+                    </Label>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="img_ver_delete" id="img_ver_delete" value="1">
+                        Eliminar imagen actual?</label>
+                    <input type="hidden" name="img_ver_original" value={{modelo.img_ver_id}}>
+                </p>
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block btn_guardar" type="submit">Guardar</button>
+
+
+
+        </form>
+
+        {{#if error}}
+        <p>{{message}}</p>
+        {{/if}}
+
+    </div>
+</div>

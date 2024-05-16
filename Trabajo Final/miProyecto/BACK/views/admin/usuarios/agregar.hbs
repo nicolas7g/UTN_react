@@ -1,0 +1,28 @@
+<div class="__container">
+
+    <div class="formulario">
+
+        <h4 class="h4 mb-3 font-weight-normal" style="text-align: center;">Agregar un nuevo usuario</h4>
+
+        <form action="/admin/usuarios/listado/agregar" method="post" class="form_agregar">
+
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="usuario"
+                name="usuario"></input>
+
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="password"
+                name="password"></input>    
+
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="nombre"
+                name="nombre"></input>
+
+            <input style="margin-bottom: 10px" type="text" class="form-control" placeholder="cargo"
+                name="cargo"></input>
+
+            <button class="btn btn-lg btn-primary btn-block" style="width: 100%; margin-top: 50px;" type="submit">Guardar</button>
+
+        </form>
+        {{#if error}}
+        <p>{{message}}</p>
+        {{/if}}
+    </div>
+</div>

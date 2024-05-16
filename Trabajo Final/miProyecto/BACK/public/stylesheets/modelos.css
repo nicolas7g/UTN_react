@@ -1,0 +1,215 @@
+.__fondo {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.__container {
+  background: rgba(28, 31, 42, 0.8);
+  width: 800px;
+  height: 950px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+
+
+.formulario {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+}
+
+
+
+
+
+.btn_guardar {
+  width: 100%;
+  margin-top: auto;
+}
+
+
+.h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.btn-light {
+  border: none;
+}
+
+
+
+.btn_icon {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*********************************************************/
+/*********** modelos.hbs*********************************/
+
+.list {
+  background: rgba(28, 31, 42, 0.9);
+  width: 1650px;
+  height: 800px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.titulo {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*(row) alineacion horizontal | (column) alineacion vertical*/
+  align-items: center;
+  /*(row) alineacion vertical | (column) alineacion horizontal*/
+
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background: rgba(186, 8, 22, 0.7);
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 5px;
+  gap: 20px;
+
+}
+
+.header h1 {
+  font-size: 18px;
+}
+
+
+.items {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.item h3 {
+  font-size: 14px;
+
+}
+
+
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  gap: 20px;
+
+}
+
+
+.pos {
+  flex: 0.05;
+  margin-left: 5px;
+  max-width: 25px;
+
+}
+
+.nomb {
+  flex: 0.1;
+  max-width: 100px;
+}
+
+
+.desc {
+  flex: 0.45;
+  text-align: justify;
+}
+
+
+.ver {
+  flex: 0.1;
+  max-width: 100px;
+  text-align: center;
+
+}
+
+.imagen_ver {
+  flex: 0.1;
+  max-width: 100px;
+  text-align: center;
+
+}
+
+
+
+.mot {
+  flex: 0.1;
+  max-width: 100px;
+  text-align: center;
+
+}
+
+.pre {
+  flex: 0.1;
+  max-width: 150px;
+  text-align: center;
+
+}
+
+.imagen {
+  flex: 0.15;
+  max-width: 195px;
+  text-align: center;
+}
+
+.img_modelo {
+
+  max-width: 190px;
+  border-radius: 5px;
+}
+
+.img_version {
+  max-width: 30px;
+
+}
+
+.act {
+  display: flex;
+  gap: 8px;
+  flex: 0.05;
+
+
+}
+
+.cerrar_sesion {
+  margin-top: auto;
+  margin-left: auto;
+}
+
+h1,
+h3,
+h6 {
+  margin: 0;
+}

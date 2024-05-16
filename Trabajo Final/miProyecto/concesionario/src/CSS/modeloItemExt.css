@@ -1,0 +1,50 @@
+.mod__contenedor_ext{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1f2a;
+    margin-top: 20px;
+    color: #f4f4f4;
+    height: 100vh;
+    flex: 1;
+
+}
+
+.auto_ext{
+    width: 50%;
+}
+
+.precio_ext >h4{
+    font-size: 25px;
+    color: #ba0816;
+}
+
+.titulo_ext{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.titulo_ext > h1{
+    font-size: 35px;
+}
+
+.titulo_ext > div > .img_version{
+    width: 40px;
+}
+
+.auto_ext > div > .img_modelo{
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.motor{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.desc{
+    font-size: 20px;
+    text-align: justify;
+}

@@ -1,0 +1,78 @@
+<div class="__fondo">
+
+    <div class="list">
+
+        <div class="titulo">
+            <div>
+                <h3>Listado de modelos de vehículos</h3>
+            </div>
+            <button style="width:150px;" type="button" class="btn btn-success"
+                onclick="window.location.href='/admin/modelos/listado/agregar'">
+                <i class='fas fa-sign-out-alt' aria-hidden="true"></i>
+
+                Nuevo
+            </button>
+        </div>
+
+        <div class="tabla">
+
+            <div class="header">
+                <h1 class="pos">#</h1>
+                <h1 class="nomb">Nombre</h1>
+                <h1 class="desc">Descripcion</h1>
+                <h1 class="ver">Version</h1>
+                <h1 class="imagen_ver"></h1>
+                <h1 class="mot">Motor</h1>
+                <h1 class="pre">Precio</h1>
+                <h1 class="imagen">Imagen</h1>
+                
+                <h1 class="act"></h1>
+
+            </div>
+
+
+            <div class="items">
+                {{#each modelos }}
+
+                <div class="item">
+                    <h3 class="pos">{{id}}</h3>
+                    <h6 class="nomb">{{nombre}}</h6>
+                    <h6 class="desc">{{desc}}</h6>
+                    <h6 class="ver">{{version}}</h6>
+                    <div class="imagen_ver">{{{imagen_ver}}}</div>
+                    <h6 class="mot">{{motor}}</h6>
+                    <h6 class="pre">{{precio}}</h6>
+                    <div class="imagen">{{{imagen}}}</div>
+                    
+                    <div class="act">
+                        <button type="button" class="btn btn-light btn_icon"
+                            onclick="window.location.href='/admin/modelos/listado/modificar/{{id}}'">
+                            <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+
+                        </button>
+
+                        <button type="button" class="btn btn-light btn_icon"
+                            onclick="window.location.href='/admin/modelos/listado/eliminar/{{id}}'">
+                            <i class='fa fa-trash' aria-hidden="true"></i>
+
+                        </button>
+                    </div>
+
+
+
+                </div>
+
+                {{/each}}
+
+            </div>
+
+        </div>
+
+
+        <div class="cerrar_sesion">
+            <p style="color: white;" class="text-end">Hola {{usuario}}! <button style="width:150px;" type="button"
+                    class="btn btn-danger" onclick="window.location.href='/admin/login/logout'">Cerrar sesión <i
+                        class='fas fa-sign-out-alt'></i></button> </p>
+        </div>
+    </div>
+</div>

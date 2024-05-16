@@ -1,0 +1,67 @@
+    <div class="__container">
+
+        <div class="list">
+
+            <div class="titulo">
+                <div>
+                    <h3>Listado de usuarios</h3>
+                </div>
+                <button style="width:150px;" type="button" class="btn btn-success"
+                    onclick="window.location.href='/admin/usuarios/listado/agregar'">
+                    <i class='fas fa-sign-out-alt' aria-hidden="true"></i>
+                    Nuevo
+                </button>
+            </div>
+
+            <div class="tabla">
+
+                <div class="header">
+                    <h1 class="pos">#</h1>
+                    <h1 class="usr">Usuario</h1>
+                    <h1 class="nomb">Nombre</h1>
+                    <h1 class="cargo">Cargo</h1>
+                    <h1 class="act"></h1>
+
+                </div>
+
+
+                <div class="items">
+                    {{#each usuarios }}
+
+                    <div class="item">
+                        <h3 class="pos">{{id}}</h3>
+                        <h3 class="usr">{{usuario}}</h3>
+                        <h3 class="nomb">{{nombre}}</h3>
+                        <h3 class="cargo">{{cargo}}</h3>
+                        <div class="act">
+                            <button type="button" class="btn btn-light btn_icon"
+                                onclick="window.location.href='/admin/usuarios/listado/modificar/{{id}}'">
+                                <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+
+                            </button>
+
+                            <button type="button" class="btn btn-light btn_icon"
+                                onclick="window.location.href='/admin/usuarios/listado/eliminar/{{id}}'">
+                                <i class='fa fa-trash' aria-hidden="true"></i>
+
+                            </button>
+                        </div>
+
+
+
+                    </div>
+
+                    {{/each}}
+
+                </div>
+
+            </div>
+
+
+            <div class="cerrar_sesion">
+                <p style="color: white;" class="text-end">Hola {{usuario}}! <button style="width:150px;" type="button"
+                        class="btn btn-danger" onclick="window.location.href='/admin/login/logout'">Cerrar sesión <i
+                            class='fas fa-sign-out-alt'></i></button> </p>
+            </div>
+        </div>
+    </div>

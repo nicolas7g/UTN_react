@@ -1,0 +1,25 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  background-image: url('../IMAGES/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  height: 100vh;
+
+  
+}
+
+
+.background__gradient{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /*background: rgba(0, 0, 0, 0.5);*/
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.1) 0,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
